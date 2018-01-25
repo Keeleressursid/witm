@@ -1,0 +1,2 @@
+def sisestatõlkesõnadesse(sõna,grammar,pid,rut):
+	päring = """

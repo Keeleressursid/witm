@@ -1,0 +1,86 @@
+<html>
+<!--
+Copyright © Võru Instituut 
+Copyright © Ants Aader
+Edasiturustamine või -levitamine ning tarkvara lähtekoodi ja binaarsete vormide kasutamine modifitseeritud või modifitseerimata kujul on lubatud, kui on täidetud järgmised tingimused:
+Tarkvara lähtekoodi edasiturustamisel või -levitamisel tuleb säilitada ülaltoodud autoriõigusemärge, käesolev tingimuste loetelu ja alljärgnev loobumisteade.
+
+Tarkvara binaarse vormi edasiturustamisel või -levitamisel tuleb dokumentatsioonis ja/või teistes turustamisel või levitamisel üleantavates materjalides reprodutseerida ülaltoodud autoriõigusemärge, käesolev tingimuste loetelu ja alljärgnev loobumisteade:
+
+SELLE TARKVARA ON VALMISTANUD VÕRU INSTITUUT KOOS KAASVALMISTAJATEGA KASUTAMISEKS SELLISENA „NAGU SEE ON“ NING SEE EI ANNA MINGIT SÕNASTATUD VÕI EELDATAVAT GARANTIID, SEALHULGAS TURUSTATAVUSE, TEATUD OTSTARBEKS SOBIVUSE EGA MUUD GARANTIID. MITTE MINGIL JUHUL EI OLE VÕRU INSTITUUT EGA TARKVARA KAASVALMISTAJAD KOHUSTATUD VASTUTAMA ÜKSKÕIK MILLISE OTSESE, KAUDSE, JUHUSLIKU, ERILISE, ÜHEKORDSE EGA TULENEVA KAHJU (SEALHULGAS ASENDUSTOODETE VÕI -TEENUSTE HANKIMISE KUJUL, KASUTAMISE, ANDMETE VÕI TULUDE KAOTUSE KUJUL; VÕI ÄRITEGEVUSE KATKEMISE KUJUL) EEST PÕHJUSTATUNA ÜKSKÕIK KUIDAS JA ÜKSKÕIK MISSUGUSE KOHUSTUSTE PÕHJENDUSEGA, ÜKSKÕIK KAS SEE TEKIB LEPINGULISE KOHUSTUSE, RANGE VASTUTUSE VÕI ÕIGUSERIKKUMISE (SEALHULGAS HOOLETUSE VÕI MUU KUJUL) TÕTTU, KUI SEE TEKIB ÜKSKÕIK MISSUGUSEL TEEL SELLE TARKVARA KASUTAMISE TAGAJÄRJEL, ISEGI KUI ON TEATAVAKS TEHTUD SELLISE KAHJU VÕIMALUS.
+
+Copyright © Võru Institute 
+Copyright © Ants Aader
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution:
+
+THIS SOFTWARE IS PROVIDED BY THE VÕRU INSTITUTE AND CONTRIBUTORS "AS IS" AND  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+	<head>
+		<title>Eesti - võru tõlkemasina kommentaarid</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link rel="stylesheet" href="/witm.css" type="text/css">
+	</head>
+	<body>
+	<div id="keha">
+	<div id="kast">
+		<h2>Eesti - võru ( - eesti) tõlkemasina kommentaarid</h2>
+		<h3>Ajaloost ja ülesehitusest.</h3>
+		<h4>Ajaloost</h4>
+		<h6>2017</h6>
+		Mida uut:
+		<ul>
+			<li>
+		Seoses suurema grammatikatöötluse ümberkorraldusega, et portida tõlkemasinat TÜ tehtud eesti keele morfoloogilise analüüsi programmile lähemale, on hetkel mittefunktsionaalne võru - eesti tõlge, millele küll enne erilist tähelepanu ei pööratud, aga mis eksisteeris ja elementaarsel tasemel tõlkis.
+			<li>
+		Muutsõnade ebareeglipäraste ja tõlkeprotsessis "kaitsmist" vajavate sõnade tabel paisus mõnesajast kirjest üle 350 000-ni, mille ridade arv küll tulevikus kindlasti väheneb, sest tegu on ajutise, mitteoptimeeritud lahendusega. Iga rida hetkel kirjeldab ühe sellise sõna ühte grammatilist omadust.
+			<li>
+		Automaattestid.
+			<li>
+		CLI ehk käsurealt töötamise tugi on taastatud. Oli varasemalt ka 2013, 2014.a. olemas, aga hiljem jäi inaktiivseks. Vajalik automaattestide toeks.
+			<li>
+		Sõnajärje muutmiseks lihtsa toe tekitamisega algust tehtud.
+			<li>
+		Sõnatöötluses on mittetõlkimiseks välja selekteeritud numbrid, emailid, jne., mis ühtlasi natuke kiirendab tõlkimist.
+			<li>
+		Kuigi tõlkemasin on aeglane, sest peamine siht on tõlkekvaliteet, on kiiruse parandamiseks olemas väljakommenteeritud tugi tõlkeprotsessi kiiruse hindamiseks, et aegajalt hoida silma peal liialt kaua aega võtvatel programmilõikudel. Seda tuge saab ka sisevõrgus kasutamiseks veebiliidesele sisselülitada.
+		</ul>
+		<h6>2016</h6>
+		<p>
+		I pool tööst oli tõlkemasina digisõnaraamatu mahu suurendamine, mis oli tingitud eesmärgist tõsta tõlkemasina kvaliteedi (testimis-staadiumist kuni väikese kasutamiskõlbliku staadiumini), mis omakorda väga tugevalt sõltus liiga väikesest sõnaraamatu mahust.
+		Aasta alguses oli ligikaudu kaheksa ja pool tuhat rida, aasta lõpuks on digisõnaraamatus peaaegu 80 tuhat rida.
+		Pabersõnaraamat ning klassikaline veebiliidesega sõnaraamat loendab sõnu lekseemidega,
+		Siinkohal kasutatav sõnaraamat kasutab teistsugust kahe keele vahelist kaardistamist ning arv 80 000 on kahe keele sõnade vastanduste arv.
+		</p>
+		<p>
+		II pool oli tõlkemasina kvaliteedi arendus, millest enamus tööd kulus käänete ja pöörete töötluse kvaliteedi parandamisele.
+		</p>
+		<h6>2015</h6>
+		<p>
+		Jõuti tõsisema käänete ja pöörete toeni.
+		(Muide, google'il polnud ei siis, ega pole ka 2016.a. lõpu seisuga mingitki märkimisväärset käänete-pöörete tuge. Ehkki nüüd juba esineb mõningaid sõnu käändes/pöördes, on need valed.)
+		Ehk teisisõnu, nii eesti kui võru keele käänete ja pöörete kirjeldus on kogu grammatika ulatuses kirjeldatud ja teoreetiliselt töödeldav.
+		Võru keele tugi piirdub siiski ainult Võru - Eesti sõnaraamatus kirjeldatud grammatika tabelite mahu ja kvaliteediga.
+		</p>
+		<p>
+		Digisõnaraamatu suurus kasvas selleni, et korrektselt tõlgiti ära vähemalt pooled lähteteksti sõnad ja mõnede valitud tekstide puhul tõlgiti ära 70-80 % (kvaliteedi vahe sõltub oluliselt (ja kindlasti veel mitmed aastad, kuni võru keel pole lõplikult standardiseeritud) võru keele hindaja lähtepositsioonist...) ilma, et oleks tõlkemasina programmi lähteteksti justnimelt nende tekstide puhuks kohandatud.
+		Sõnaraamatu suurus kasvas vähimast minimaalsest vajalikust kuni lihtsalt väikesemahulise sõnaraamatuni, kaheksa ja pool tuhat rida.
+		</p>
+		<h6>2014</h6>
+		<p>
+		Praktiliselt esimene aasta tõlkemasina arenduses. Disainiti ja tehti tõlkemasina meetod, kus tõlkimisel arvestatakse käänete ja pööretega.
+		Ja tehti esimene minimaalne võru-eesti sõnaraamat, mis vähemalt võimaldaks tõlkimisteste läbi viia.
+		Täielikku eesti ja võru keele grammatika toeni ei jõudmine polnud selle aasta eesmärk.
+		</p>
+		<h6>2013</h6>
+		<p>
+		Ühe kuu mahus tõestus (proof of concept), et mingigi eesti keelne tekst jõuab mingigi, kasvõi kaugelt äratuntava, võru keelse tekstini.
+
+		<h4>Ülesehitusest</h4>
+		<p>
+		Eesti - võru - eesti masintõlge põhineb täisautomaatidel. Ülejäänud ülesehituse tutvustus on "paberid" kataloogis.
+	</div>
+	</div>
+	</body>
+</html>

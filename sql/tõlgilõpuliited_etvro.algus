@@ -1,0 +1,2 @@
+def tõlgilõpuliited_etvro(pid):
+	päring = """

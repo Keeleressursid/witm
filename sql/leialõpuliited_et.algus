@@ -1,0 +1,2 @@
+def leialõpuliited_et(pid,sõna):
+	päring = """

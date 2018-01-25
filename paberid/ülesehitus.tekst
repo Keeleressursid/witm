@@ -1,0 +1,54 @@
+Masintõlke põhiosast:
+	Programmi veebiliidese osa on "htdocs" kataloogis.
+	Masintõlge on "witm" kataloogis.
+	SQL-päringud on sql kataloogis
+
+Lisaks on veel mõned kataloogid:
+	testid, kus on automaattestid.
+	paberid, kus on mõni või mõned dokumenteerivad tekstid.
+	konf, SQL-serveri jaoks.
+
+
+Masintõlkel on nii veebiliides, kui ka käsurealiides.
+Veebiliides kutsub välja "witm" kataloogis oleva witolge.py faili.
+Käsurealiides töötab "witm" kataloogis järgmiselt (esimene rida soovituslik,
+kui asute mujal kataloogis):
+
+	> cd witm
+	> echo "Karu tuleb tööle." | python3 witolge.py
+	Kahr suurõtulõs ammõdile.
+
+
+Masintõlke tööjärjekord:
+* kõigepealt loetakse tekst sisse, st. andmebaasi
+
+* protsessitakse nii, et numbrid, emailid, URL-id, jne. märgitakse eraldi, neid ei tõlgita
+	ja tõlkimiseks jäetakse ainult märgendatud sõnad.
+	Ehk tokeniseeritakse.
+
+* tõlkimiseks märgendatud sõnu töödeldakse rekursiivselt. Kui
+	sõna tõlgitakse ära, siis praeguse seisuga tõlgitud sõna enam
+	edasi ei protsessita:
+
+	* digisõnaraamatus lihtvõrdlus
+	* sama, aga sõnel kõik väiketähed
+	* lihttõlge erinditest, kus kontrollitakse andmebaasist sõnu,
+		mis on ebareeglipärased ja sõnu, mida soovitakse
+		eelisjärjekorras tõlkida ehk varjestada võimalike valetõlgete
+		eest
+	* lähtekeeles lõpuliidete rekursiivne protsessimine
+		* iga sammuga leitakse lõpuliidete tabelist sobilikke lõpuliidete
+			kandidaate, iga järelejäänud tüve testitakse, kas vastav
+			tüvi on digisõnaraamatus esindatud.
+			Tõlgitud tüvega ja liidetega kandidaadid salvestatakse
+	* sihtkeeles tüve ja lõpuliidete otsimine ja asendamine
+
+* lõpliku tõlke valik kandidaatsõnade seast
+	Igal mitmese valikuga sõna ühel kandidaadil on "wi"-lipuke püsti,
+	neid saab db-s ümber häälestada ja võibolla pole seda kõigil sõnadel.
+	Häälestussüsteemi edasi arendades on võimalik tõlkida ka nt.
+	eesti - setu suunal ning muudelgi suuremate võru keele alajaotuste
+	põhiselt.  WI-lipuke siis tähendab ühtlustatud ehk "ametlikku"
+	võru keelt. Loomulikult saab seda täiustada, nt. on hetkel (2017.a.
+	projekti lõpetamisel) veel lõpuliidete võru keelde tõlkimisel liidetel
+	murdelipud küljes, aga valikuprotsessimisel seda tuge veel pole.

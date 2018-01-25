@@ -1,0 +1,135 @@
+/*
+#Copyright © Võru Instituut 
+#Copyright © Ants Aader
+#Edasiturustamine või -levitamine ning tarkvara lähtekoodi ja binaarsete vormide kasutamine modifitseeritud või modifitseerimata kujul on lubatud, kui on täidetud järgmised tingimused:
+#Tarkvara lähtekoodi edasiturustamisel või -levitamisel tuleb säilitada ülaltoodud autoriõigusemärge, käesolev tingimuste loetelu ja alljärgnev loobumisteade.
+#
+#Tarkvara binaarse vormi edasiturustamisel või -levitamisel tuleb dokumentatsioonis ja/või teistes turustamisel või levitamisel üleantavates materjalides reprodutseerida ülaltoodud autoriõigusemärge, käesolev tingimuste loetelu ja alljärgnev loobumisteade:
+#
+#SELLE TARKVARA ON VALMISTANUD VÕRU INSTITUUT KOOS KAASVALMISTAJATEGA KASUTAMISEKS SELLISENA „NAGU SEE ON“ NING SEE EI ANNA MINGIT SÕNASTATUD VÕI EELDATAVAT GARANTIID, SEALHULGAS TURUSTATAVUSE, TEATUD OTSTARBEKS SOBIVUSE EGA MUUD GARANTIID. MITTE MINGIL JUHUL EI OLE VÕRU INSTITUUT EGA TARKVARA KAASVALMISTAJAD KOHUSTATUD VASTUTAMA ÜKSKÕIK MILLISE OTSESE, KAUDSE, JUHUSLIKU, ERILISE, ÜHEKORDSE EGA TULENEVA KAHJU (SEALHULGAS ASENDUSTOODETE VÕI -TEENUSTE HANKIMISE KUJUL, KASUTAMISE, ANDMETE VÕI TULUDE KAOTUSE KUJUL; VÕI ÄRITEGEVUSE KATKEMISE KUJUL) EEST PÕHJUSTATUNA ÜKSKÕIK KUIDAS JA ÜKSKÕIK MISSUGUSE KOHUSTUSTE PÕHJENDUSEGA, ÜKSKÕIK KAS SEE TEKIB LEPINGULISE KOHUSTUSE, RANGE VASTUTUSE VÕI ÕIGUSERIKKUMISE (SEALHULGAS HOOLETUSE VÕI MUU KUJUL) TÕTTU, KUI SEE TEKIB ÜKSKÕIK MISSUGUSEL TEEL SELLE TARKVARA KASUTAMISE TAGAJÄRJEL, ISEGI KUI ON TEATAVAKS TEHTUD SELLISE KAHJU VÕIMALUS.
+#
+#Copyright © Võru Institute 
+#Copyright © Ants Aader
+#Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+#Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+#Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution:
+#
+#THIS SOFTWARE IS PROVIDED BY THE VÕRU INSTITUTE AND CONTRIBUTORS "AS IS" AND  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED  WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR  ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES  (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #b5c9d5;
+}
+
+#keha {
+	list-style: none;
+	position: relative;
+	min-width: 800px;
+	max-width: 1200px;
+
+	height: 100%;   
+	margin: 0 auto;
+	padding: 0;
+}
+ul#keha {
+}
+
+#lang {
+		margin-right: 0;
+		text-align: right;
+		float: right;
+}
+#yl {
+	position: relative;
+	top: 0;
+	text-align: center;
+}
+#muusika {
+		position: relative;
+		top: 50px;
+		float: left;
+		margin-left: 0;
+		width: 40%;
+}
+#cs {
+		position: relative;
+		top: 50px;
+		float: right;
+		margin-right: 0;
+		width: 40%;
+		text-align: left;
+}
+#keel {
+		clear: both;
+		position: relative;
+		top: 100px;
+		margin-left: 25%;
+		width: 50%;
+}
+#al {
+		position: relative;
+		top: 100px;
+		margin-left: 0;
+		width: 40%;
+}
+#loodus {
+		position: relative;
+		top: 150px;
+		float: left;
+		margin-left: 0;
+		width: 40%;
+}
+#töö {
+		position: relative;
+		top: 150px;
+		float: right;
+		margin-right: 0;
+		width: 40%;
+		text-align: left;
+}
+.jutt {
+	letter-spacing: 0.9px;
+	word-spacing: 1.5px;
+	font-size: 1.05em;
+	line-height: 1.5em;
+	text-shadow: 1px 1px 0px #990033;
+}
+A:link {
+	color : darkblue;
+	background : transparent;
+	text-shadow: 1px 1px 1px lightblue;
+	text-decoration: none;
+}
+A:hover {
+	color : red;
+	background : transparent;
+	text-shadow: 1px 1px 2px violet;
+}
+A:active {
+	color : white;
+	background : darkred;
+}
+A:visited {
+	color           : blue;
+	background      : transparent;
+	text-shadow     : 1px 1px 2px lightgray;
+	text-decoration: none;
+}
+A:visited:hover {
+	color:          #111111;
+	background:     white;
+	text-shadow:    1px 1px 2px blue;
+}
+A:visited:active        {
+	color:          black;
+	background:     #4169e1;
+}
+
+table	{
+	border-collapse: collapse;
+	border: 0px solid #000000;
+}
+td	{
+	border: 1px solid #606060;
+}

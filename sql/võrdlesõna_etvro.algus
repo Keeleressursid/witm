@@ -1,0 +1,2 @@
+def võrdlesõna_etvro(sõna):
+	päring = """

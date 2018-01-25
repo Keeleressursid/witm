@@ -1,0 +1,2 @@
+def võrdlesõna_vroet(sõna):
+	päring = """WITH

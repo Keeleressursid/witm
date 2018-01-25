@@ -1,0 +1,2 @@
+def uuendatõlkesõna(sõna,grammar,pid,rut):
+	päring = """
